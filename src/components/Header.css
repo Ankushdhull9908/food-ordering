@@ -1,6 +1,7 @@
 .header{
     position: relative;
     height: 75vh;
+
 }
 
 #headerimg{
@@ -53,5 +54,26 @@
 .headerimagecontent h1{
     font-size: 52px;
     word-spacing: 10px;
+}
+
+@media (max-width:480px) {
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35vh;
+        width: 100vw;
+    }
+
+    .headerimagecontent h1{
+        font-size: 22px;
+        word-spacing: 10px;
+    }
+
+    .headerimagecontent{
+        bottom: 30px;
+    }
+
+    
 }
 

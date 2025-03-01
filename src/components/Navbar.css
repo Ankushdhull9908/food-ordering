@@ -46,3 +46,37 @@
     color: white;
     border: none;
 }
+
+
+
+@media (max-width:460px) {
+
+    .navbar{
+        flex-wrap: wrap;
+        max-width:460px;
+    }
+
+    .navbar img{
+        height: 20px;
+        width: auto;
+    }
+
+
+    .navbar .logo{
+        width: auto;
+    }
+
+    .navbar .logo img{
+        height: 20px;
+    }
+
+    
+    .navbar ul{
+        display: none;
+    }
+
+    .navbar .right{
+        gap: 15px;
+        width: 60%;
+    }
+}

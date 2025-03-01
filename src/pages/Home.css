@@ -5,6 +5,7 @@
     flex-direction: column;
     gap: 30px;
 
+
 }
 
 .home h3{
@@ -21,7 +22,7 @@
     justify-content: flex-start;
     align-items: center;
     height: 30%;
-    background-color: red;
+
     width: 100%;
 }
 
@@ -33,6 +34,15 @@
 
 .notshow{
     display: none;
+}
+
+@media (max-width:460px) {
+    .home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width:480px
+    }
 }
 
 

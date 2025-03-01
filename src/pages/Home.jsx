@@ -15,7 +15,11 @@ function Home() {
   const [showmap,setshowmap] = useState('notshow')
   const [showhomecontent,setshowhomecontent] = useState('home')
   const [useraddress,setuseraddress] = useState()
-  const [city,setcity] = useState()
+  const [city,setcity] = useState('')
+
+      useEffect(()=>{
+         
+      },[])
 
 
       useEffect(()=>{
@@ -25,6 +29,7 @@ function Home() {
          {
             setshowmap('mapheader')
             setshowhomecontent('notshow')
+            setcity('')
          }else{
           setcity(x.address.city)
             setshowmap('notshow')
