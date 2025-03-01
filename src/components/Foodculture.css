@@ -1,0 +1,18 @@
+.foodculture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foodculturebox{
+    border-radius: 10px;
+    border: 0.1px solid #ddd;
+    width: 90%;
+}
+
+
+.foodculturebox p{
+    word-spacing: 10px;
+    color: grey;
+}
+

@@ -1,0 +1,57 @@
+.header{
+    position: relative;
+    height: 75vh;
+}
+
+#headerimg{
+    height: 100%;
+    width: 100%;
+    rotate: 180deg;
+    border-radius: 15px;
+}
+
+.mapheader{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapheader img{
+    height: 100%;
+    width: 100%;
+    filter: blur(2px);
+}
+
+.mapheader button{
+   bottom: 100px;
+    height: 45px;
+    width: 200px;
+    position: absolute;
+}
+
+.headerimagelogo{
+    top: 40px;
+    left: 40px;
+    position: absolute;
+}
+
+.headerimagelogo img{
+    height: 20px;
+    width: auto;
+}
+
+
+.headerimagecontent{
+    position: absolute;
+    bottom: 80px;
+    color: whitesmoke;
+    width: 50%;
+    left: 40px;
+}
+
+.headerimagecontent h1{
+    font-size: 52px;
+    word-spacing: 10px;
+}
+
