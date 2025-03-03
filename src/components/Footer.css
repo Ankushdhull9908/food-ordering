@@ -62,3 +62,22 @@
     height: 20px;
     width: auto;
 }
+
+
+@media (max-width:480px) {
+    .footer{
+        height: 35vh;
+    }
+
+    .footer img{
+        height: 14px;
+    }
+
+    .footer h4{
+       font-size: 14px;
+    }
+
+    .footer p{
+        font-size: 11px;
+    }
+}

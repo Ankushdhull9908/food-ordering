@@ -4,8 +4,7 @@
     align-items: center;
     flex-direction: column;
     gap: 30px;
-
-
+    height: 100%;
 }
 
 .home h3{
@@ -42,6 +41,10 @@
         justify-content: center;
         align-items: center;
         max-width:480px
+    }
+
+    .headings h2{
+        left: 70px;
     }
 }
 

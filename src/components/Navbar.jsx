@@ -10,7 +10,7 @@ function Navbar() {
   console.log(logindata)
   useEffect(()=>{
         
-  },[logindata])
+  },[])
 
   const navigate = useNavigate()
   return (
@@ -31,13 +31,13 @@ function Navbar() {
                <img src={assets.search_icon} alt='search'/>
            </div>
  
-           <div className="cart">
+           <div className="cart1">
             <img src={assets.bag_icon} alt='bag' onClick={()=>{
               navigate('/cart')
             }}/>
            </div>
 
-           <div className="signup">
+           <div className="signup1">
               <button onClick={()=>{
 
                 logindata.name!==null ? navigate(`/profile/${logindata.name}`) : navigate('/signup')

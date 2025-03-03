@@ -1,35 +1,33 @@
-@import url('https://your-font-cdn.com/gilroy.css');
-
-*{
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  width: 80%;
-  margin: auto;
-  font-family: 'Gilroy', sans-serif;
-  overflow-y: auto;
-
-}
-
-/*@font-face {
-
-
-  font-family: 'Gilroy';
-  src: url('/Assets/fonts/Gilroy/Gilroy-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('/Assets/fonts/Gilroy/Gilroy-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
+  src: url('./assets/Gilroy/Gilroy-Regular.ttf') format('truetype');
+  font-weight: normal;
 }
 
-
-body{
-  font-family: Gilroy;
+/*@font-face {
+  font-family: 'Gilroy';
+  src: url('/Gilroy/Gilroy-Bold.ttf') format('truetype');
+  font-weight: bold;
 }*/
+
+
+
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure the HTML and body take full screen */
+html, body {
+  width: 92%;
+  margin: auto;
+  font-family: 'Gilroy', sans-serif;
+}
+
+#root {
+  width: 92%;
+  margin: auto;
+}

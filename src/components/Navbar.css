@@ -4,6 +4,7 @@
     justify-content: space-between;
     gap: 10px;
     align-items: center;
+    width: 100%;
 }
 
 .navbar .logo{
@@ -39,7 +40,7 @@
     list-style: none;
 }
 
-.navbar .right .signup button{
+.navbar .right .signup1 button{
     height: 35px;
     width: 120px;
     background-color: orange;
@@ -49,11 +50,11 @@
 
 
 
-@media (max-width:460px) {
+@media (max-width:480px) {
 
     .navbar{
         flex-wrap: wrap;
-        max-width:460px;
+        max-width:480px;
     }
 
     .navbar img{

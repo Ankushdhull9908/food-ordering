@@ -12,7 +12,15 @@
 
 
 .foodculturebox p{
-    word-spacing: 10px;
+    font-size: 18px;
+    word-spacing: 15px;
     color: grey;
+}
+
+
+@media (max-width:460px) {
+    .foodculture{
+        display: none;
+    }
 }
 

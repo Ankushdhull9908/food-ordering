@@ -17,7 +17,7 @@
     flex-direction: column;
     align-items: flex-start;
     max-height: 200px;
-    width: 240px;
+    width: 220px;
     margin: 20px 20px 50px 20px;
 }
 
@@ -89,4 +89,20 @@
 
 .ratingdeliverytime img{
     height: 20px;
+}
+
+@media (max-width:460px) {
+    .fooditems .fooditem{
+        min-height: 120px;
+
+        max-height: 150px;
+        width: 150px;
+        margin: 10px 20px 50px 50px;
+    }
+
+    .fooditem .foodimg img{
+        border-radius: 15px;
+        height: 100px;
+        width: auto;
+    }
 }

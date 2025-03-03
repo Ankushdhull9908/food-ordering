@@ -10,9 +10,9 @@ import menu_5 from './menu_5.png'
 import menu_6 from './menu_6.png'
 import menu_7 from './menu_7.png'
 import menu_8 from './menu_8.png'
+import loading from './loading.png'
 
-import food_1 from './food_1.png'
-import food_2 from './food_2.png'
+import food_2 from './food_2.jpg'
 import food_3 from './food_3.png'
 import food_4 from './food_4.png'
 import food_5 from './food_5.png'
@@ -63,6 +63,7 @@ import parcel_icon from './parcel_icon.png'
 
 export const assets = {
     map,
+    loading,
     logo,
     basket_icon,
     header_img,
@@ -122,7 +123,7 @@ export const food_list = [
     {
         _id: "1",
         name: "Greek salad",
-        image: food_1,
+        image: food_2,
         price: 12,
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Salad"

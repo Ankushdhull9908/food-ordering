@@ -22,16 +22,36 @@ export const CartProvider = (props) => {
     },[cart])
 
     useEffect(()=>{
+
+    },[address])
+
+    useEffect(()=>{
          var x = JSON.parse(localStorage.getItem('useraddress'))
+         console.log(x)
 
          if(x===null)
          {
             setaddress({...address,address:null,city:null,pincode:null,country:null})
          }else{
+            console.log(x)
             setuserlat(x.lat)
             setlong(x.lon)
+            setaddress({...address,address:x.display_name,city:x.address.city,pincode:x.address.postcode,country:x.address.country})
+            
          }
+    },[userlat])
+
+    console.log(userlat,userlong)
+
+
+    useEffect(()=>{
+
     },[address])
+
+
+    useEffect(()=>{
+
+    },[userlat])
 
     
 
@@ -53,14 +73,14 @@ export const CartProvider = (props) => {
 
     useEffect(()=>{
       localStorage.setItem('cart',JSON.stringify(cart))
-    },[cart])
+    },[])
 
 
     useEffect(()=>{
         cart.forEach((i)=>{
             setquantity((prev)=> prev+= i.quantity)
         })
-    },[cart])
+    },[])
 
    // console.log(quantity)
  
@@ -187,7 +207,7 @@ export const CartProvider = (props) => {
         const FullLength = Math.ceil((final.length)/2)
       //  console.log(FullLength)*/
     return (
-        <CartContext.Provider value={{getuserlatlong,address,final,FullLength,login,address,logindata/*haversine,distance,cart,addToCart, removeFromCart,increasequantity,decreasequantity,logindata,,totalprice,allproducttotal,AddAddress*/}}>
+        <CartContext.Provider value={{getuserlatlong,address,final,FullLength,login,logindata,userlat,AddAddress/*haversine,distance,cart,addToCart, removeFromCart,increasequantity,decreasequantity,logindata,,totalprice,allproducttotal,AddAddress*/}}>
             {props.children}
         </CartContext.Provider>
     );

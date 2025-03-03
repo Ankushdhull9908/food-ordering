@@ -1,5 +1,5 @@
 .menulist{
-    height: 30%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,4 +22,16 @@
 .menulist .item img{
     height: 75px;
     width: auto;
+}
+
+
+
+@media (max-width:460px) {
+    .menulist{
+        width: 70%;
+    }
+
+    .menulist .item img{
+        height: 60px;
+    }
 }

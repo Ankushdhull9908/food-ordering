@@ -1,7 +1,6 @@
 .header{
     position: relative;
-    height: 75vh;
-
+    height: 77%;
 }
 
 #headerimg{
@@ -12,23 +11,69 @@
 }
 
 .mapheader{
+    height: 35%;
+    width: 80%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.mapheader img{
+.mapheader p{
+    z-index: 2;
+    top: 50px;
+    position: absolute;
+
+}
+
+.mapheader .fetchandimage{
+    width: 110px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 2;
+    top: -80px;
+}
+
+#googlemap{
     height: 100%;
     width: 100%;
     filter: blur(2px);
 }
+
+.mapheader #loading{
+    height: 55px;
+    width: auto;
+    top: 50px;
+    animation: loading 1s infinite ease-in-out
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(110deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
 
 .mapheader button{
    bottom: 100px;
     height: 45px;
     width: 200px;
     position: absolute;
+    border: none;
+    background-color: lightgreen;
+    color: white;
+}
+
+.mapheader button:hover{
+    background-color: green;
 }
 
 .headerimagelogo{
@@ -61,18 +106,49 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 35vh;
+        height: 24vh;
         width: 100vw;
     }
 
+    #headerimg{
+        height: 100%;
+        width: 90%;
+    }
+
+    .headerimagelogo{
+        top: 20px;
+        left: 50px;
+        position: absolute;
+    }
+
+    .headerimagelogo img{
+        height: 14px;
+    }
+
     .headerimagecontent h1{
-        font-size: 22px;
+        font-size: 20px;
         word-spacing: 10px;
     }
 
     .headerimagecontent{
         bottom: 30px;
+        left: 50px;
     }
+
+    .mapheader button{
+        bottom: 40px;
+         height: 35px;
+         width: 150px;
+     }
+
+
+     .mapheader #loading{
+        height: 30px;
+     }
+
+     .mapheader .fetchandimage{
+        top: -70px;
+     }
 
     
 }

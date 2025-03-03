@@ -10,39 +10,37 @@ import { useCart } from '../CartContext'
 
 function Home() {
 
-  const {getuserlatlong,logindata} = useCart()
+  const {getuserlatlong,logindata,address} = useCart()
 
   const [showmap,setshowmap] = useState('notshow')
   const [showhomecontent,setshowhomecontent] = useState('home')
-  const [useraddress,setuseraddress] = useState()
   const [city,setcity] = useState('')
+  const [loading,setloading] = useState(false)
+
+
+      console.log(address)
 
       useEffect(()=>{
-         
-      },[])
-
-
-      useEffect(()=>{
-        var x = JSON.parse(localStorage.getItem('useraddress'))
-        
-         if(x===null)
+         if(address.city===null)
          {
             setshowmap('mapheader')
             setshowhomecontent('notshow')
             setcity('')
          }else{
-          setcity(x.address.city)
+            setcity(address.city)
             setshowmap('notshow')
             setshowhomecontent('home')
          }
         
-      },[])
+      },[address])
 
 
        function getCurrentLocation()
         {
+          setloading(true)
           navigator.geolocation.getCurrentPosition((pos)=>{
             getuserlatlong(pos.coords.latitude,pos.coords.longitude)
+            setloading(false)
           })
         }
 
@@ -50,7 +48,10 @@ function Home() {
     <div className='home'>
          <hr></hr>
          <div className={showmap}>
-            <img src={assets.map} alt='map'/>
+            {
+              loading=== true? <div className='fetchandimage'><p>Fetching data</p><img src={assets.loading} id='loading' alt='loading'/></div> : <p></p>
+            }
+            <img src={assets.map} id='googlemap' alt='map'/>
             <button onClick={()=>{
               getCurrentLocation()
             }}>Current Location</button>
@@ -101,8 +102,9 @@ function Home() {
          <FoodCulture/>
           
          
-         <Footer/>
+         
          </div>
+         <Footer/>
 
          
     </div>
