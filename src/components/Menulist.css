@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 95%;
+    width: 95vw;
     gap: 20px;
     overflow-x: auto;
 
@@ -28,7 +28,7 @@
 
 @media (max-width:460px) {
     .menulist{
-        width: 70%;
+        width: 77vw;
     }
 
     .menulist .item img{

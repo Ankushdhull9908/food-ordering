@@ -44,7 +44,8 @@
     }
 
     .headings h2{
-        left: 70px;
+        font-size: 20px;
+        left: 50px;
     }
 }
 
