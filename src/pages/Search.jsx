@@ -41,21 +41,21 @@ function Search() {
                             //const estimatedtime = Math.ceil((item.Distance / 30) * 60)
             
                             return(
-                                <div className='fooditem' key={index}>
-                                    <div className="foodimg">
+                                <div className='sfooditem' key={index}>
+                                    <div className="sfoodimg">
                                     <img src={item.image} alt='error'/>
                                     </div>
-                                    <div className="resname">
+                                    <div className="sresname">
                                     <h3>{item.name}</h3>
                                     </div>
                                     
             
-                                    <div className="ratingdeliverytime">
+                                    <div className="sratingdeliverytime">
                                         <img src={assets.rating_starts} alt='error'/>
                                     <p>{item.rating}</p>
                                     <p> - {item.deliveryTime}min</p>
                                     </div>
-                                    <div className="resaddress">
+                                    <div className="sresaddress">
                                     <p>{item.location.address}</p>
                                     </div>  
                                    

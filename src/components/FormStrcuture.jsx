@@ -16,8 +16,9 @@ function FormStrcuture() {
     const data = { name: name, phone: phone, pass: pass }
     localStorage.setItem('logindata', JSON.stringify(data))
     login(data)
-    navigate('/')
-
+    setname('')
+    setphone('')
+    setpass('')
     e.preventDefault()
   }
   return (

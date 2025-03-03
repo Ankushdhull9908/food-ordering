@@ -5,14 +5,6 @@
   font-weight: normal;
 }
 
-/*@font-face {
-  font-family: 'Gilroy';
-  src: url('/Gilroy/Gilroy-Bold.ttf') format('truetype');
-  font-weight: bold;
-}*/
-
-
-
 /* Reset some default browser styles */
 * {
   margin: 0;
@@ -22,13 +14,13 @@
 
 /* Ensure the HTML and body take full screen */
 html, body {
-  width: 92%;
+  width: 75vw;
   margin: auto;
   font-family: 'Gilroy', sans-serif;
 }
 
 #root {
-  width: 92%;
+  
   margin: auto;
 }
 
@@ -42,5 +34,6 @@ html, body {
   #root {
     width: 96%;
   }
+
   
 }
