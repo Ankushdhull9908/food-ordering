@@ -4,7 +4,6 @@
     align-items: center;
     height: 30vh;
     width: 100%;
-    
 }
 
 .footerbox{
@@ -64,10 +63,13 @@
 }
 
 
-@media (max-width:480px) {
+@media (max-width:460px) {
     .footer{
         height: 35vh;
     }
+
+
+
 
     .footer img{
         height: 14px;
@@ -79,5 +81,4 @@
 
     .footer p{
         font-size: 11px;
-    }
-}
+    }}

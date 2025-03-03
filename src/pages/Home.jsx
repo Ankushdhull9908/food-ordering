@@ -48,9 +48,11 @@ function Home() {
     <div className='home'>
          <hr></hr>
          <div className={showmap}>
+            
             {
-              loading=== true? <div className='fetchandimage'><p>Fetching data</p><img src={assets.loading} id='loading' alt='loading'/></div> : <p></p>
+              loading===true? <div className='fetchandimage'><p>Fetching data</p><img src={assets.loading} id='loading' alt='loading'/></div> : <p></p>
             }
+            
             <img src={assets.map} id='googlemap' alt='map'/>
             <button onClick={()=>{
               getCurrentLocation()

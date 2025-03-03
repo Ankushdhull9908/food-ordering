@@ -28,7 +28,7 @@ function Navbar() {
         </ul>
         <div className="right">
            <div className="search">
-               <img src={assets.search_icon} alt='search'/>
+               <img src={assets.search_icon} alt='search' onClick={()=> navigate('/search')}/>
            </div>
  
            <div className="cart1">

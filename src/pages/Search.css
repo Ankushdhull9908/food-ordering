@@ -1,0 +1,116 @@
+.search1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 93%;
+  }
+
+  .search1 .searchinputarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        height: 100px;
+        width: 100%;
+  }
+
+  .search1 .searchinputarea input{
+    height: 45px;
+    width: 90%;
+    border: 0.1px solid #ddd;
+    outline: none;
+  }
+  
+
+  .search1 .searchresults{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    width: 93%;
+  }
+  
+    .fooditem{
+      transition: 0.2s ease-in-out;
+      min-height: 150px;
+      display: flex;
+      justify-content: flex-start;
+      gap: 10px;
+      flex-direction: column;
+      align-items: flex-start;
+      max-height: 200px;
+      width: 220px;
+      margin: 20px 20px 50px 20px;
+  }
+  
+  .search1 .fooditem:hover{
+      scale: 1.1;
+  }
+  
+  .fooditem .foodimg{
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      height: 50%;
+      width: 200px;
+  }
+  .fooditem .foodimg img{
+      border-radius: 15px;
+      height: 170px;
+      width: auto;
+  }
+  
+  
+  .ratingdeliverytime{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      margin-left: 10px;
+  }
+  
+  .resname{
+      display: flex;
+      height: auto;
+      width: 100%;
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: 10px;
+  }
+  
+  .resaddress{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      margin-left: 10px;
+  }
+  
+  .resaddress p{
+      font-size: 10px;
+  }
+  
+  .showmore{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      margin: 30px 0px 30px 0px;
+  }
+  
+  .showmore button{
+      height: 55px;
+      width: 180px;
+      background: none;
+      color: orange;
+      border-radius: 10px;
+      border: 0.1px solid orange;
+      
+  }
+  
+  .ratingdeliverytime img{
+      height: 20px;
+  }

@@ -31,3 +31,16 @@ html, body {
   width: 92%;
   margin: auto;
 }
+
+
+@media (max-width:460px) {
+  html, body {
+    width: 96%;
+    
+  }
+  
+  #root {
+    width: 96%;
+  }
+  
+}
