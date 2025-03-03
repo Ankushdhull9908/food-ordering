@@ -27,12 +27,12 @@ html, body {
 
 @media (max-width:460px) {
   html, body {
-    width: 96%;
+    width: 96vw;
     
   }
   
   #root {
-    width: 96%;
+    width: 96vw;
   }
 
   

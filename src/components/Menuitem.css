@@ -96,13 +96,21 @@
         min-height: 120px;
 
         max-height: 150px;
-        width: 150px;
+        width: 140px;
         margin: 10px 20px 50px 50px;
     }
 
     .fooditem .foodimg img{
         border-radius: 15px;
-        height: 100px;
+        height: 90px;
         width: auto;
+    }
+
+    .ratingdeliverytime img{
+        height: 12px;
+    }
+
+    .ratingdeliverytime p{
+        font-size: 12px;
     }
 }

@@ -1,6 +1,10 @@
 .header{
     position: relative;
     height: 77%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #headerimg{
@@ -102,18 +106,18 @@
     word-spacing: 10px;
 }
 
-@media (max-width:480px) {
+@media (max-width:460px) {
     .header{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 54vh;
+        height: 36vh;
         width: 100vw;
     }
 
     #headerimg{
-        height: 100%;
-        width: 90%;
+        height: 87%;
+        width: 87%;
     }
 
     .headerimagelogo{
